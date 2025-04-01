@@ -23,7 +23,7 @@ function Chat() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8000/analyze_stock', {
+      const response = await axios.post('https://dm-backend-jpz1.onrender.com/analyze_stock', {
         query: input,
       },
       { 
