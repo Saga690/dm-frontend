@@ -32,6 +32,7 @@ function Chat() {
         },
         // Don't send credentials since your backend now has allow_credentials=False
         withCredentials: true, 
+        timeout: 600000,
       });
       
       console.log("Full response object:", response);
